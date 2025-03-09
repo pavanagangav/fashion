@@ -1,0 +1,518 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fashion</title>
+    <style>
+      .card{
+        width: 18rem;
+        float: left;
+        margin: 5px;
+        border: 1px solid;
+        padding: 15px;
+       box-shadow: 2px 2px 5px rgba(0,0, 0, 0.2);
+      }
+      .h1{
+        font-family: 'Times New Roman', Times, serif;
+        font-size: 10px;
+        font-weight: 5px;
+        padding: 5px;
+        margin-left:10px ;
+        border-radius: 1px solid;
+        box-shadow: 2px 2px 5px rgba(0,0, 0, 0.2);
+      }
+    </style>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+   
+    <nav class="navbar navbar-expand-lg fixed-top bg-transparent">
+      <div class="container-fluid">
+        <img
+          src="images/logo.jpg"
+          alt="logo"
+          class="rounded-circle img-fluid"
+          height="50px"
+          width="50px"
+        />
+        <a class="navbar-brand" href="#" style="color: black">Fashion</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          style="background:rgb(225, 221, 221)"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a
+                class="nav-link active"
+                aria-current="page"
+                href="#"
+                style="color: black"
+                >Home</a
+              >
+            </li>
+            <!-- <li class="nav-item">
+                <a class="nav-link" href="#">Link</a>
+              </li> -->
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                id="navbarDropdown"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+                style="color: black"
+              >
+                Women's
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="saress.html">Saress</a></li>
+                <li><a class="dropdown-item" href="tops.html">Tops</a></li>
+
+                <li><a class="dropdown-item" href="traditional.html">Traditional</a></li>
+                <li><hr class="dropdown-divider" /></li>
+                <li><a class="dropdown-item" href="#">More</a></li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                id="navbarDropdown"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+                style="color: black"
+              >
+                Men's
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="tshirts.html">T-shirts</a></li>
+                <li><a class="dropdown-item" href="shirts.html">Shirts</a></li>
+                <li><a class="dropdown-item" href="jeans.html">Jeans</a></li>
+                <li><hr class="dropdown-divider" /></li>
+                <li><a class="dropdown-item" href="#">More</a></li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                id="navbarDropdown"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+                style="color: black"
+              >
+                Kids
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="coats.html">Coats</a></li>
+                <li><a class="dropdown-item" href="frocks.html">Frocks</a></li>
+
+                <li><a class="dropdown-item" href="nightware.html">Nightware</a></li>
+                <li><hr class="dropdown-divider" /></li>
+                <li><a class="dropdown-item" href="#">More</a></li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                id="navbarDropdown"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+                style="color: black"
+              >
+                Contact
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="help.html">Helpline</a></li>
+                <li><a class="dropdown-item" href="chat.html">Chat</a></li>
+
+                <!-- <li><a class="dropdown-item" href="#"></a></li>
+                  <li><hr class="dropdown-divider"></li>
+                   
+                  <li><a class="dropdown-item" href="#">Something else here</a></li> -->
+              </ul>
+            </li>
+          </ul>
+          <form class="d-flex">
+            <input
+              class="form-control me-2"
+              type="search"
+              placeholder="Search"
+              aria-label="Search"
+            />
+            <button class="btn btn-outline-success" type="submit">
+              Search
+            </button>
+          </form>
+        </div>
+      </div>
+    </nav>
+    <!-- video -->
+     <div>
+     <video src="video/vid.mp4" loop autoplay muted width="100%" ></video>
+    </div>
+      <!-- audio -->
+       <div>
+      <audio src="music/audio.mp3" autoplay loop controls="false"></audio>
+    </div>
+<!-- <div>
+    <audio hidden>
+      <source src="music/audio.mp3" type="audio/mp3">
+    </audio>
+  </div> -->
+    <!-- sliders -->
+    <div
+      id="carouselExampleIndicators"
+      class="carousel slide"
+      data-bs-ride="carousel"
+    >
+      <div class="carousel-indicators">
+        <button
+          type="button"
+          data-bs-target="#carouselExampleIndicators"
+          data-bs-slide-to="0"
+          class="active"
+          aria-current="true"
+          aria-label="Slide 1"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carouselExampleIndicators"
+          data-bs-slide-to="1"
+          aria-label="Slide 2"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carouselExampleIndicators"
+          data-bs-slide-to="2"
+          aria-label="Slide 3"
+        ></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img
+            src="images/1.jpg"
+            class="d-block w-100"
+            alt="..."
+            width="100%"
+            height="90%"
+          />
+        </div>
+        <div class="carousel-item">
+          <img
+            src="images/2.jpg"
+            class="d-block w-100"
+            alt="..."
+            width="100%"
+            height="200%"
+          />
+        </div>
+        <div class="carousel-item">
+          <img
+            src="images/3.jpg"
+            class="d-block w-100"
+            alt="..."
+            width="100%"
+            height="100%"
+          />
+        </div>
+      </div>
+      <button
+        class="carousel-control-prev"
+        type="button"
+        data-bs-target="#carouselExampleIndicators"
+        data-bs-slide="prev"
+      >
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button
+        class="carousel-control-next"
+        type="button"
+        data-bs-target="#carouselExampleIndicators"
+        data-bs-slide="next"
+      >
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+    <!-- cards -->
+     <h1 class="h1">NEW ARRIVALS</h1>
+     <div class="card">
+    <!-- <div class="card" style="width: 18rem; float: left"> -->
+      <img src="images/card2.jpg" class="card-img-top" alt="..." />
+      <div class="card-body">
+        <h5 class="card-title">Women's</h5>
+        <p class="card-text">Women’s fashion comes in a range of flavours.</p>
+      </div>
+      <ul class="list-group list-group-flush">
+        <li class="list-group-item">Lehenga</li>
+        <li class="list-group-item"><mark>Rs.2,465 </mark><s>3,234</s></li>
+        <li class="list-group-item">20%+Free Delivery</li>
+      </ul>
+      <div class="card-body">
+        <a href="#" class="card-link">Add To Cart</a>
+        <a href="#" class="card-link">For More</a>
+      </div>
+    </div>
+
+    <!-- <div class="card" style="width: 18rem; float: left"> -->
+      <div class="card">
+      <img src="images/card1.jpg" class="card-img-top" alt="..." />
+      <div class="card-body">
+        <h5 class="card-title">Men's</h5>
+        <p class="card-text">
+          Shop from the latest collection of Apparels for Men .
+        </p>
+      </div>
+      <ul class="list-group list-group-flush">
+        <li class="list-group-item">Shirt</li>
+        <li class="list-group-item"><mark>Rs.1,465 </mark><s>2,234</s></li>
+        <li class="list-group-item">20%+Free Delivery</li>
+      </ul>
+      <div class="card-body">
+        <a href="#" class="card-link">Add To Cart</a>
+        <a href="#" class="card-link">For More</a>
+      </div>
+    </div>
+    <!-- <div class="card" style="width: 18rem; float: left"> -->
+      <div class="card">
+      <img src="images/card3.jpg" class="card-img-top" alt="..." />
+      <div class="card-body">
+        <h5 class="card-title">Kids</h5>
+        <p class="card-text">
+          everal brands have upgraded their kidswear collections.
+        </p>
+      </div>
+      <ul class="list-group list-group-flush">
+        <li class="list-group-item">Kurtha</li>
+        <li class="list-group-item"><mark>Rs.2,465 </mark><s>3,234</s></li>
+        <li class="list-group-item">20%+Free Delivery</li>
+      </ul>
+      <div class="card-body">
+        <a href="#" class="card-link">Add To Cart</a>
+        <a href="#" class="card-link">For More</a>
+      </div>
+    </div>
+    <!-- <div class="card" style="width: 18rem; float: left"> -->
+      <div class="card">
+      <img src="images/card4.jpg" class="card-img-top" alt="..." />
+      <div class="card-body">
+        <h5 class="card-title">Fancy Wear</h5>
+        <p class="card-text">Walk In Style With Clothes.</p>
+      </div>
+      <ul class="list-group list-group-flush">
+        <li class="list-group-item">bainaras</li>
+        <li class="list-group-item"><mark>Rs.3,465 </mark><s>5,234</s></li>
+        <li class="list-group-item">20%+Free Delivery</li>
+      </ul>
+      <div class="card-body">
+        <a href="#" class="card-link">Add To Cart</a>
+        <a href="#" class="card-link">For More</a>
+      </div>
+    </div>
+    <!-- <div class="card" style="width: 18rem; float: left"> -->
+      <div class="card">
+      <img src="images/card5.jpg" class="card-img-top" alt="..." />
+      <div class="card-body">
+        <h5 class="card-title">Ethinic Wear</h5>
+        <p class="card-text">
+          Match your kurta with a colourful dhoti of your choice.
+        </p>
+      </div>
+      <ul class="list-group list-group-flush">
+        <li class="list-group-item">Paiyama</li>
+        <li class="list-group-item"><mark>Rs.3,465 </mark><s>6,234</s></li>
+        <li class="list-group-item">20%+Free Delivery</li>
+      </ul>
+      <div class="card-body">
+        <a href="#" class="card-link">Add To Cart</a>
+        <a href="#" class="card-link">For More</a>
+      </div>
+    </div>
+
+
+
+    <!-- footer -->
+    <footer class="footer" style="background-color: white">
+      <div class="container">
+        <div class="row">
+          <div
+            class="col-sm-6 col-md-4 mt-4 col-lg-3 text-center text-sm-start"
+          >
+            <div class="information">
+              <h6 class="footer-heading text-uppercase text-black fw-bold">
+                Information
+              </h6>
+              <ul class="list-unstyled footer-link mt-4">
+                <li class="mb-1">
+                  <a
+                    href="https://codepen.io/Gaurav-Rana-the-reactor"
+                    class="text-black text-decoration-none fw-semibold"
+                    >Events</a
+                  >
+                </li>
+                <li class="mb-1">
+                  <a
+                    href="https://codepen.io/Gaurav-Rana-the-reactor"
+                    class="text-black text-decoration-none fw-semibold"
+                    >Our Team</a
+                  >
+                </li>
+                <li class="mb-1">
+                  <a
+                    href="https://codepen.io/Gaurav-Rana-the-reactor"
+                    class="text-black text-decoration-none fw-semibold"
+                    >Upcoming Sale</a
+                  >
+                </li>
+                <li class="">
+                  <a
+                    href="https://codepen.io/Gaurav-Rana-the-reactor"
+                    class="text-black text-decoration-none fw-semibold"
+                    >New Launches</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div
+            class="col-sm-6 col-md-4 mt-4 col-lg-3 text-center text-sm-start"
+          >
+            <div class="resources">
+              <h6 class="footer-heading text-uppercase text-black fw-bold">
+                Resources
+              </h6>
+              <ul class="list-unstyled footer-link mt-4">
+                <li class="mb-1">
+                  <a
+                    href="https://codepen.io/Gaurav-Rana-the-reactor"
+                    class="text-black text-decoration-none fw-semibold"
+                    >API</a
+                  >
+                </li>
+                <li class="mb-1">
+                  <a
+                    href="https://codepen.io/Gaurav-Rana-the-reactor"
+                    class="text-black text-decoration-none fw-semibold"
+                    >Website Tutorials</a
+                  >
+                </li>
+                <li class="mb-1">
+                  <a
+                    href="https://codepen.io/Gaurav-Rana-the-reactor"
+                    class="text-black text-decoration-none fw-semibold"
+                    >Third Party</a
+                  >
+                </li>
+                <li class="">
+                  <a
+                    href="https://codepen.io/Gaurav-Rana-the-reactor"
+                    class="text-black text-decoration-none fw-semibold"
+                    >Video Lectures</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div
+            class="col-sm-6 col-md-4 mt-4 col-lg-2 text-center text-sm-start"
+          >
+            <div class="social">
+              <h6 class="footer-heading text-uppercase text-black fw-bold">
+                Social
+              </h6>
+              <ul class="list-inline my-4">
+                <li class="list-inline-item">
+                  <a href="" class="text-white btn-sm btn btn-primary mb-2"
+                    ><i class="bi bi-facebook"></i
+                  ></a>
+                </li>
+                <li class="list-inline-item">
+                  <a href="" class="text-danger btn-sm btn btn-light mb-2"
+                    ><i class="bi bi-instagram"></i
+                  ></a>
+                </li>
+                <li class="list-inline-item">
+                  <a href="" class="text-black btn-sm btn btn-primary mb-2"
+                    ><i class="bi bi-twitter"></i
+                  ></a>
+                </li>
+                <li class="list-inline-item">
+                  <a href="" class="text-black btn-sm btn btn-success mb-2"
+                    ><i class="bi bi-whatsapp"></i
+                  ></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div
+            class="col-sm-6 col-md-6 mt-4 col-lg-4 text-center text-sm-start"
+          >
+            <div class="contact">
+              <h6 class="footer-heading text-uppercase text-black fw-bold">
+                Contact Us
+              </h6>
+              <address class="mt-4 m-0 text-black mb-1">
+                <i class="bi bi-pin-map fw-semibold"></i> New South Block ,
+                Phase 8B , 160055
+              </address>
+              <a
+                href="tel:+"
+                class="text-black mb-1 text-decoration-none d-block fw-semibold"
+                ><i class="bi bi-telephone"></i> 9090905678</a
+              >
+              <a
+                href="mailto:"
+                class="text-black mb-1 text-decoration-none d-block fw-semibold"
+                ><i class="bi bi-envelope"></i> fashion@gmail.com</a
+              >
+              <a href="" class="text-black text-decoration-none fw-semibold"
+                ><i class="bi bi-skype"></i> abcmall</a
+              >
+            </div>
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d122103.60734042915!2d81.72395572743208!3d16.987446324584766!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a37a3f2440c9fff%3A0x86b24503e305ca21!2sRajamahendravaram%2C%20Andhra%20Pradesh!5e0!3m2!1sen!2sin!4v1738899618992!5m2!1sen!2sin"
+              width="300"
+              height="200"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </div>
+        </div>
+      </div>
+      <div class="text-center bg-dark text-white mt-4 p-1">
+        <p class="mb-0 fw-bold">2023 © Fashion, All Rights Reserved</p>
+      </div>
+    </footer>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
